@@ -133,3 +133,47 @@ input:focus {
 #register-form input[type="submit"]:hover {
   opacity: 1;
 } 
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  #register-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #register-banner {
+    width: 100%;
+  }
+
+  #register-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #register-form h2 {
+    font-size: 1.8rem;
+  }
+
+  #register-form p {
+    font-size: 0.7rem;
+  }
+
+  .form-control label {
+    font-size: 0.9rem;
+  }
+
+  .form-control input {
+    padding: 0.5rem 0;
+  }
+
+  #register-form #generated-password {
+    font-size: 1rem;
+  }
+
+  #register-form input[type="submit"] {
+    padding: 0.8rem 1.2rem;
+    max-width: 120px;
+  }
+}
